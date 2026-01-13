@@ -21,14 +21,14 @@ export default function ContactPage() {
               </p>
 
               <div className="space-y-6 mb-8">
-                {agentData.email && agentData.email !== 'TODO: Insert email from official page' ? (
+                {(agentData as any).email && (agentData as any).email !== 'TODO: Insert email from official page' ? (
                   <div>
                     <p className="text-label text-black/60 mb-2">Email</p>
                     <a
-                      href={`mailto:${agentData.email}`}
+                      href={`mailto:${(agentData as any).email}`}
                       className="text-lg text-black hover:text-gold transition-colors"
                     >
-                      {agentData.email}
+                      {(agentData as any).email}
                     </a>
                   </div>
                 ) : (
