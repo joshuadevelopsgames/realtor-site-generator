@@ -65,7 +65,7 @@ export default function HomePage() {
             <div className="mb-12 md:mb-16">
               <h2 className="mb-4">Featured Listings</h2>
               <p className="text-black/70 max-w-2xl">
-                Curated selection of exceptional properties in Los Angeles' most distinguished neighborhoods.
+                Curated selection of exceptional properties in Los Angeles&apos; most distinguished neighborhoods.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
@@ -122,13 +122,13 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
               <div>
                 <p className="text-lg text-black/80 mb-4 italic">
-                  "TODO: Insert verified client testimonial"
+                  &quot;TODO: Insert verified client testimonial&quot;
                 </p>
                 <p className="text-sm text-black/60">— TODO: Client Name</p>
               </div>
               <div>
                 <p className="text-lg text-black/80 mb-4 italic">
-                  "TODO: Insert verified client testimonial"
+                  &quot;TODO: Insert verified client testimonial&quot;
                 </p>
                 <p className="text-sm text-black/60">— TODO: Client Name</p>
               </div>
