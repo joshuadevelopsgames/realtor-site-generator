@@ -18,7 +18,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const listing = listingsData.listings.find((l) => l.slug === params.slug)
+  const listing = (listingsData.listings as any[]).find((l) => l.slug === params.slug)
 
   if (!listing) {
     return {
