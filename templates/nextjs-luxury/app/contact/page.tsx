@@ -4,7 +4,7 @@ import agentData from '@/content/agent.json'
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: 'Contact Santiago Arana for luxury real estate consultation.',
+  description: `Contact ${agentData.name} for luxury real estate consultation.`,
 }
 
 export default function ContactPage() {

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import agentData from '@/content/agent.json'
+import agentData from '@/content/agent.json'
 
 export default function Footer() {
   return (
@@ -7,10 +8,9 @@ export default function Footer() {
       <div className="container-custom section-padding">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
           <div>
-            <h3 className="text-lg font-serif font-semibold mb-4">Santiago Arana</h3>
+            <h3 className="text-lg font-serif font-semibold mb-4">{agentData.name}</h3>
             <p className="text-sm text-black/70 mb-4">
-              Luxury Real Estate<br />
-              The Agency
+              {agentData.title}
             </p>
           </div>
 
@@ -54,7 +54,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-black/10">
           <p className="text-xs text-black/60 text-center">
-            © {new Date().getFullYear()} Santiago Arana. All rights reserved.
+            © {new Date().getFullYear()} {agentData.name}. All rights reserved.
           </p>
         </div>
       </div>

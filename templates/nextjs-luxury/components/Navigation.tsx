@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
+import agentData from '@/content/agent.json'
 
 const navItems = [
   { href: '/', label: 'Home' },
@@ -35,7 +36,7 @@ export default function Navigation() {
       <div className="container-custom">
         <div className="flex items-center justify-between h-20 md:h-24">
           <Link href="/" className="text-xl md:text-2xl font-serif font-semibold text-black hover:text-gold transition-colors">
-            Santiago Arana
+            {agentData.name}
           </Link>
 
           {/* Desktop Navigation */}

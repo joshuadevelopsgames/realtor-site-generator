@@ -32,8 +32,8 @@ export default function HomePage() {
       />
 
       <Hero
-        title="Santiago Arana"
-        subtitle="Luxury Real Estate | The Agency"
+        title={agentData.name}
+        subtitle={agentData.title}
         primaryCTA={{
           text: 'Request a Private Consultation',
           href: '/contact',

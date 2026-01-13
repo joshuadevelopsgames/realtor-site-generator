@@ -3,6 +3,7 @@ import { Playfair_Display, Inter } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import agentData from '@/content/agent.json'
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -20,24 +21,24 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Santiago Arana | Luxury Real Estate | The Agency',
-    template: '%s | Santiago Arana',
+    default: `${agentData.name} | ${agentData.title}`,
+    template: `%s | ${agentData.name}`,
   },
-  description: 'Luxury real estate representation in Los Angeles. Discreet, strategic, presentation-led marketing for high-net-worth clients.',
-  keywords: ['luxury real estate', 'Los Angeles', 'Beverly Hills', 'Malibu', 'Bel Air', 'The Agency'],
-  authors: [{ name: 'Santiago Arana' }],
+  description: `Luxury real estate representation by ${agentData.name}. ${agentData.bio.substring(0, 150)}...`,
+  keywords: ['luxury real estate', 'Los Angeles', 'Beverly Hills', 'Malibu', 'Bel Air', agentData.name, ...agentData.markets],
+  authors: [{ name: agentData.name }],
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://santiagoarana.com',
-    siteName: 'Santiago Arana',
-    title: 'Santiago Arana | Luxury Real Estate | The Agency',
-    description: 'Luxury real estate representation in Los Angeles.',
+    url: `https://${agentData.name.toLowerCase().replace(/\s+/g, '-')}.com`,
+    siteName: agentData.name,
+    title: `${agentData.name} | ${agentData.title}`,
+    description: `Luxury real estate representation by ${agentData.name}.`,
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Santiago Arana | Luxury Real Estate',
-    description: 'Luxury real estate representation in Los Angeles.',
+    title: `${agentData.name} | Luxury Real Estate`,
+    description: `Luxury real estate representation by ${agentData.name}.`,
   },
   robots: {
     index: true,

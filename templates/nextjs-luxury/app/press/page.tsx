@@ -5,7 +5,7 @@ import ConsultationForm from '@/components/ConsultationForm'
 
 export const metadata: Metadata = {
   title: 'Press',
-  description: 'Press coverage and media features for Santiago Arana.',
+  description: `Press coverage and media features for ${agentData.name}.`,
 }
 
 export default function PressPage() {
