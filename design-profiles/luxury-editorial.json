@@ -1,0 +1,142 @@
+{
+  "design_profile": {
+    "name": "Luxury Listings – Real Estate",
+    "brand_personality": {
+      "keywords": [
+        "ultra-luxury",
+        "editorial",
+        "confident",
+        "minimal",
+        "high-net-worth",
+        "timeless",
+        "quietly expensive"
+      ],
+      "avoid": [
+        "playful",
+        "rounded bubbly UI",
+        "startup aesthetics",
+        "bright accent colors",
+        "overly animated elements"
+      ]
+    },
+    "layout_system": {
+      "page_structure": [
+        "full-bleed hero section",
+        "editorial content blocks",
+        "grid-based property showcases",
+        "high-contrast CTA sections",
+        "minimal footer"
+      ],
+      "grid": {
+        "type": "12-column",
+        "max_width": "1440px",
+        "gutter": "24px",
+        "content_alignment": "centered with strong left alignment for text"
+      },
+      "spacing": {
+        "section_padding": "96–140px vertical",
+        "element_spacing": "generous, never cramped",
+        "white_space_priority": "very high"
+      }
+    },
+    "typography": {
+      "primary_font": {
+        "style": "Playfair Display",
+        "use_cases": ["headlines", "hero titles", "section headers"],
+        "characteristics": [
+          "high contrast strokes",
+          "elegant letterforms",
+          "luxury editorial feel"
+        ]
+      },
+      "secondary_font": {
+        "style": "Inter",
+        "use_cases": ["body text", "labels", "metadata"],
+        "characteristics": [
+          "neutral",
+          "high readability",
+          "subtle weight variations"
+        ]
+      },
+      "hierarchy": {
+        "h1": "large, confident, low line-height",
+        "h2": "editorial, restrained",
+        "body": "comfortable reading width, airy line height",
+        "labels": "uppercase or small caps, increased letter spacing"
+      }
+    },
+    "color_system": {
+      "primary_palette": {
+        "backgrounds": ["#FFFFFF", "#F5F5F5", "#0F0F0F"],
+        "text": ["#0A0A0A", "#1A1A1A", "#FFFFFF"],
+        "accents": ["#C9A24D", "#BFA980"]
+      },
+      "usage_rules": [
+        "backgrounds are neutral and dominant",
+        "accent colors used sparingly",
+        "never use more than one accent color per section"
+      ],
+      "contrast": "high contrast preferred for readability and authority"
+    },
+    "imagery": {
+      "style": {
+        "photography": "high-resolution, cinematic, natural lighting",
+        "subjects": [
+          "luxury homes",
+          "architectural details",
+          "lifestyle moments (subtle, not staged)"
+        ],
+        "color_treatment": [
+          "natural tones",
+          "slightly desaturated",
+          "no heavy filters"
+        ]
+      },
+      "usage_rules": [
+        "images are full-bleed or large blocks",
+        "never use small thumbnails for hero content",
+        "text overlays are minimal and high contrast"
+      ]
+    },
+    "components": {
+      "buttons": {
+        "shape": "sharp or very subtle radius",
+        "style": "outlined or solid black/white",
+        "hover_behavior": "simple color inversion or opacity change",
+        "text": "uppercase or semi-uppercase, increased tracking"
+      },
+      "cards": {
+        "style": "flat, no heavy shadows",
+        "borders": "thin or none",
+        "focus": "content and imagery over decoration"
+      },
+      "navigation": {
+        "position": "top, minimal height",
+        "style": "text-first, understated",
+        "behavior": "sticky with subtle transitions"
+      }
+    },
+    "motion_and_interactions": {
+      "animation_style": "subtle and slow",
+      "allowed": [
+        "fade-ins",
+        "slight vertical movement",
+        "image reveal on scroll"
+      ],
+      "avoid": [
+        "bouncy animations",
+        "spring effects",
+        "excessive hover motion"
+      ]
+    },
+    "content_tone": {
+      "voice": "confident, concise, aspirational",
+      "sentence_structure": "short to medium length",
+      "avoid": [
+        "salesy language",
+        "exclamation points",
+        "marketing clichés"
+      ]
+    }
+  }
+}

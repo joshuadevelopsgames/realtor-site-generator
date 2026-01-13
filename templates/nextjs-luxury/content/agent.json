@@ -1,0 +1,90 @@
+{
+  "name": "Santiago Arana",
+  "title": "Luxury Real Estate | The Agency",
+  "bio": "Part of a power trio that includes Billy Rose and Mauricio Umansky, Santiago joined The Agency in 2014 as Principal and Partner, specializing in high-end residential real estate and new construction across the region's most coveted neighborhoods. Santiago spearheaded the company's Westside expansion as Managing Partner of the Brentwood and Pacific Palisades offices. To date, he has closed over $4.8 billion in real estate.\n\nFor twelve consecutive years, Santiago has placed among the Top 250 Realtors in the United States in the annual REAL Trends Inc. ranking, featured in The Wall Street Journal. In 2020, he represented the top half percent of more than one million REALTORS® nationwide, ranking #6 in the country, #3 in California, and #1 west of the 405 freeway. For the second year in a row, Santiago ranked #1 in the country for sales volume by the National Association of Hispanic Real Estate Professionals® Latino Agent Award. Santiago has also been featured for seven consecutive years in the Los Angeles Business Journal's Most Influential People in Real Estate in Los Angeles.\n\nSantiago recently ranked among the top agents driving the L.A. real estate market by The Los Angeles Business Journal, which also named him among the outstanding professionals on its annual list of \"Who's Brokering L.A.\", and \"Leaders of Influence\" in the industry. He has also been chosen as one of \"Hollywood's Top 30 Real Estate Agents\" by The Hollywood Reporter for thirteen years running and has been named to Variety's list of \"Showbiz Real Estate Elite\" for fourteen consecutive years. No stranger to representing high-profile clients such as Ben Affleck, Jennifer Lopez, Sophia Vergara, Lady Gaga, Lebron James, Larry David, Rick Caruso, Tom Barrack, Anthony Hopkins, \"Bond King\" Jeffrey Gundlach, and Alessandra Ambrosio, among others, Santiago is artfully discreet and carefully tailors his marketing strategies to fit each individual property while protecting his client's privacy.\n\nRenowned for his record-breaking sales throughout L.A., Santiago's most notable recent sales include, 2571 Wallingford Drive - $60,850,000, 609 E Channel (record sale) $48,674,649, 5012 Carbon Beach - $38,000,000 (record sale), 1172 Napoli Drive - $28,500,000, 8201 Bellgave Place - $25,600,000, 445 Walker Drive - $24,180,000, 14180 Rustic Lane - $25,500,000 (highest sale in Rustic Canyon), 242 N Carmelina Ave (Double-ender) $22,2000,000, 1401 San Remo - $18,000,000, 126 N Rockingham- $23,900,000 (record sale - highest in Brentwood park and off-market), and 15000 Corona Del Mar- $25,500,000. His current notable listings include 2571 Wallingford Drive - $52,000,000, 766 Paseo Miramar - $39,000,000, 1204 Chickory Lane - $38,000,000, and 491 N Tigertail Road - $29,950,000.\n\nOriginally from Sucre, Bolivia, Santiago's international background has helped build him a strong network of contacts from every corner of the globe. Armed with a Bachelor's degree in Business Administration and Marketing, Santiago offers clients knowledge-backed guidance through the real estate market as well as highly-targeted, future-facing marketing strategies. Santiago is known for his exceptional work ethic, his sharp negotiation skills, his stellar ability to close deals, and his warm, friendly personality. His network of contacts, professionalism, and passion for exceeding clients' expectations combine to make Santiago the ideal choice for a wide variety of real estate needs and investments. In past roles, Santiago served as Director of the New Construction Division and distinguished himself with his knowledge of and success with new development and investment properties throughout the Westside.",
+  "headshot": "/assets/headshot.jpg",
+  "email": "santiago@theagencyre.com",
+  "phone": "+1 (310) 926-9808",
+  "license": {
+    "number": "01492489",
+    "state": "CA",
+    "type": "DRE"
+  },
+  "markets": [
+    "Brentwood",
+    "Pacific Palisades",
+    "Beverly Hills",
+    "Malibu",
+    "Santa Monica",
+    "Westside Los Angeles"
+  ],
+  "social": {
+    "instagram": "santiagoarana",
+    "instagramUrl": "https://www.instagram.com/santiagoarana/",
+    "instagramEmbeds": {
+      "reel": "https://www.instagram.com/reel/C6RMF2wrSNQ/",
+      "examplePost": "https://www.instagram.com/p/CJg_QGcL5bL/"
+    }
+  },
+  "press": [
+    {
+      "outlet": "The Wall Street Journal",
+      "year": "2012-2024",
+      "title": "Top 250 Realtors in the United States (REAL Trends Inc. ranking)",
+      "link": "https://www.wsj.com"
+    },
+    {
+      "outlet": "The Hollywood Reporter",
+      "year": "2011-2024",
+      "title": "Hollywood's Top 30 Real Estate Agents (13 years running)",
+      "link": ""
+    },
+    {
+      "outlet": "Variety",
+      "year": "2010-2024",
+      "title": "Showbiz Real Estate Elite (14 consecutive years)",
+      "link": ""
+    },
+    {
+      "outlet": "LA Business Journal",
+      "year": "2017-2024",
+      "title": "Most Influential People in Real Estate in Los Angeles (7 consecutive years)",
+      "link": ""
+    },
+    {
+      "outlet": "LA Business Journal",
+      "year": "2024",
+      "title": "Leaders of Influence - Residential Real Estate",
+      "link": "https://labusinessjournal.com/custom-content/leaders-of-influence-residential-real-estate-2024-santiago-arana/"
+    },
+    {
+      "outlet": "LA Business Journal",
+      "year": "2024",
+      "title": "LA500 - Most Influential People in Real Estate",
+      "link": "https://labusinessjournal.com/la500-2024/real-estate-2024/la500-2024-santiago-arana/"
+    },
+    {
+      "outlet": "National Association of Hispanic Real Estate Professionals",
+      "year": "2020-2021",
+      "title": "Latino Agent Award - #1 in the country for sales volume",
+      "link": ""
+    }
+  ],
+  "approach": [
+    "Discreet representation for high-profile clients",
+    "Sharp negotiation skills and exceptional work ethic",
+    "Highly-targeted, future-facing marketing strategies",
+    "Knowledge-backed guidance through the real estate market",
+    "New construction and investment property expertise"
+  ],
+  "numbers": {
+    "show": true,
+    "volume": "$4.8B+",
+    "rankings": {
+      "top250": "12 consecutive years",
+      "2020Country": "#6",
+      "2020California": "#3",
+      "2020WestOf405": "#1"
+    }
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "listings": [
+    {
+      "id": "1",
+      "slug": "491-n-tigertail-road",
+      "address": "491 N Tigertail Road",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90049",
+      "price": 29950000,
+      "beds": 0,
+      "baths": 0,
+      "sqft": 0,
+      "lotSize": 0,
+      "status": "active",
+      "featured": true,
+      "images": [
+        "/assets/listings/491-tigertail.jpg"
+      ],
+      "description": "Luxury estate in Los Angeles' prestigious Brentwood area.",
+      "highlights": [
+        "Prime Brentwood location",
+        "Exceptional architectural design"
+      ],
+      "coordinates": {
+        "lat": 34.0806,
+        "lng": -118.4708
+      },
+      "externalLinks": {
+        "realtor": "https://www.realtor.com/realestateandhomes-detail/491-N-Tigertail-Rd_Los-Angeles_CA_90049_M26021-09708",
+        "zillow": "https://www.zillow.com/homedetails/491-N-Tigertail-Rd-Los-Angeles-CA-90049/20537030_zpid/",
+        "redfin": "https://www.redfin.com/CA/Los-Angeles/491-N-Tigertail-Rd-90049/home/6837561"
+      }
+    },
+    {
+      "id": "2",
+      "slug": "2571-wallingford-drive",
+      "address": "2571 Wallingford Drive",
+      "city": "Beverly Hills",
+      "state": "CA",
+      "zip": "90210",
+      "price": 52000000,
+      "beds": 12,
+      "baths": 24,
+      "sqft": 38000,
+      "lotSize": 5,
+      "status": "active",
+      "featured": true,
+      "images": [
+        "/assets/listings/2571-wallingford.jpg"
+      ],
+      "description": "Recently renovated, Crestview Manor sits atop a five-acre promontory, offering unparalleled privacy and breathtaking mountain views. This exceptional Beverly Hills estate features 38,000 square feet of luxury living space with 12 bedrooms and 24 bathrooms. Previously sold for $60,850,000.",
+      "highlights": [
+        "Record-breaking Beverly Hills property",
+        "38,000 square feet of living space",
+        "Five-acre promontory with mountain views",
+        "Recently renovated with highest level of craftsmanship",
+        "Unparalleled privacy and security"
+      ],
+      "coordinates": {
+        "lat": 34.0928,
+        "lng": -118.4201
+      },
+      "externalLinks": {}
+    },
+    {
+      "id": "3",
+      "slug": "766-paseo-miramar",
+      "address": "766 Paseo Miramar",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90272",
+      "price": 39000000,
+      "beds": 0,
+      "baths": 0,
+      "sqft": 0,
+      "lotSize": 0,
+      "status": "active",
+      "featured": true,
+      "images": [
+        "/assets/listings/stassi.jpg"
+      ],
+      "description": "Luxury contemporary estate in Pacific Palisades.",
+      "highlights": [
+        "Pacific Palisades location",
+        "Contemporary design"
+      ],
+      "coordinates": {
+        "lat": 34.0444,
+        "lng": -118.5281
+      },
+      "externalLinks": {}
+    },
+    {
+      "id": "4",
+      "slug": "1204-chickory-lane",
+      "address": "1204 Chickory Lane",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90049",
+      "price": 38000000,
+      "beds": 0,
+      "baths": 0,
+      "sqft": 0,
+      "lotSize": 0,
+      "status": "active",
+      "featured": true,
+      "images": [
+        "/assets/listings/1204-chickory.jpg"
+      ],
+      "description": "Luxury contemporary estate in Los Angeles.",
+      "highlights": [
+        "Contemporary architectural design",
+        "Prime Los Angeles location"
+      ],
+      "coordinates": {
+        "lat": 34.0806,
+        "lng": -118.4708
+      },
+      "externalLinks": {}
+    },
+    {
+      "id": "5",
+      "slug": "15313-de-pauw-street",
+      "address": "15313 De Pauw Street",
+      "city": "Pacific Palisades",
+      "state": "CA",
+      "zip": "90272",
+      "price": 0,
+      "beds": 0,
+      "baths": 0,
+      "sqft": 0,
+      "lotSize": 0,
+      "status": "active",
+      "featured": false,
+      "images": [
+        "/assets/listings/15313-de-pauw.jpg"
+      ],
+      "description": "Development opportunity in Pacific Palisades.",
+      "highlights": [
+        "Development opportunity",
+        "Pacific Palisades location"
+      ],
+      "coordinates": {
+        "lat": 34.0444,
+        "lng": -118.5281
+      },
+      "externalLinks": {}
+    },
+    {
+      "id": "6",
+      "slug": "2515-marguerita-avenue",
+      "address": "2515 Marguerita Avenue",
+      "city": "Santa Monica",
+      "state": "CA",
+      "zip": "90404",
+      "price": 0,
+      "beds": 0,
+      "baths": 0,
+      "sqft": 0,
+      "lotSize": 0,
+      "status": "active",
+      "featured": false,
+      "images": [
+        "/assets/listings/marguerita.jpg"
+      ],
+      "description": "Luxury property in Santa Monica.",
+      "highlights": [
+        "Santa Monica location",
+        "Prime location"
+      ],
+      "coordinates": {
+        "lat": 34.0259,
+        "lng": -118.4908
+      },
+      "externalLinks": {}
+    },
+    {
+      "id": "9",
+      "slug": "1985-highgate-road",
+      "address": "1985 Highgate Road",
+      "city": "Thousand Oaks",
+      "state": "CA",
+      "zip": "91362",
+      "price": 0,
+      "beds": 0,
+      "baths": 0,
+      "sqft": 0,
+      "lotSize": 0,
+      "status": "active",
+      "featured": false,
+      "images": [
+        "/assets/listings/highgate.jpg"
+      ],
+      "description": "Luxury property in Thousand Oaks.",
+      "highlights": [
+        "Thousand Oaks location",
+        "Prime property"
+      ],
+      "coordinates": {
+        "lat": 34.1706,
+        "lng": -118.8376
+      },
+      "externalLinks": {}
+    },
+    {
+      "id": "7",
+      "slug": "26168-pacific-coast-highway",
+      "address": "26168 Pacific Coast Highway",
+      "city": "Malibu",
+      "state": "CA",
+      "zip": "90265",
+      "price": 0,
+      "beds": 0,
+      "baths": 0,
+      "sqft": 0,
+      "lotSize": 0,
+      "status": "active",
+      "featured": false,
+      "images": [
+        "/assets/listings/pacific-coast-hwy.jpg"
+      ],
+      "description": "Beachfront opportunity in Malibu.",
+      "highlights": [
+        "Beachfront location",
+        "Malibu"
+      ],
+      "coordinates": {
+        "lat": 34.0259,
+        "lng": -118.7798
+      },
+      "externalLinks": {}
+    },
+    {
+      "id": "8",
+      "slug": "26170-pacific-coast-highway",
+      "address": "26170 Pacific Coast Highway",
+      "city": "Malibu",
+      "state": "CA",
+      "zip": "90265",
+      "price": 0,
+      "beds": 0,
+      "baths": 0,
+      "sqft": 0,
+      "lotSize": 0,
+      "status": "active",
+      "featured": false,
+      "images": [
+        "/assets/listings/pacific-coast-hwy.jpg"
+      ],
+      "description": "Beachfront opportunity in Malibu.",
+      "highlights": [
+        "Beachfront location",
+        "Malibu"
+      ],
+      "coordinates": {
+        "lat": 34.0259,
+        "lng": -118.7798
+      },
+      "externalLinks": {}
+    }
+  ]
+}

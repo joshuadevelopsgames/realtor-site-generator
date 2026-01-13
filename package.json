@@ -1,0 +1,49 @@
+{
+  "name": "realtor-site-generator",
+  "version": "1.0.0",
+  "description": "Generate luxury real estate websites from design profiles and MLS data",
+  "main": "dist/cli/index.js",
+  "bin": {
+    "realtor-site-generator": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch cli/index.ts",
+    "start": "node dist/cli/index.js",
+    "generate": "tsx cli/index.ts generate",
+    "test": "jest"
+  },
+  "keywords": [
+    "real-estate",
+    "website-generator",
+    "mls",
+    "scraper",
+    "nextjs"
+  ],
+  "author": "joshuadevelopsgames",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "puppeteer": "^21.6.1",
+    "axios": "^1.6.5",
+    "sharp": "^0.33.2",
+    "commander": "^11.1.0",
+    "inquirer": "^9.2.15",
+    "chalk": "^5.3.0",
+    "ora": "^7.0.1",
+    "fs-extra": "^11.2.0",
+    "glob": "^10.3.10",
+    "dotenv": "^16.3.1",
+    "zod": "^3.22.4",
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "@types/inquirer": "^9.0.7",
+    "@types/fs-extra": "^11.0.4",
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.11"
+  }
+}
