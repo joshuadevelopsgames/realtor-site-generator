@@ -63,17 +63,21 @@ Design profiles are JSON files that define the visual style and brand personalit
 
 ## Supported Agencies
 
-- ✅ The Agency (theagencyre.com)
-- 🔜 Compass
-- 🔜 Coldwell Banker
-- 🔜 More coming soon...
+- ✅ **The Agency** (theagencyre.com)
+- ✅ **Compass** (compass.com)
+- ✅ **Coldwell Banker** (coldwellbanker.com, coldwellbankerhomes.com)
+- ✅ **Sotheby's International Realty** (sothebysrealty.com, sothebyshomes.com)
+- ✅ **Douglas Elliman** (douglaselliman.com)
+- ✅ **Corcoran** (corcoran.com)
 
 ## Supported MLS Sites
 
-- ✅ Realtor.com
-- ✅ Zillow.com
-- 🔜 Redfin.com
-- 🔜 More coming soon...
+- ✅ **Realtor.com** - Full support for property details, images, and descriptions
+- ✅ **Zillow.com** - Full support for property details, images, and descriptions
+- ✅ **Redfin.com** - Full support for property details, images, and descriptions
+- ✅ **Trulia.com** - Full support for property details, images, and descriptions
+- ✅ **Homes.com** - Full support for property details, images, and descriptions
+- ✅ **Movoto.com** - Full support for property details, images, and descriptions
 
 ## Project Structure
 
