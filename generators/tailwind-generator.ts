@@ -39,6 +39,27 @@ export async function generateTailwindConfig(
   const sectionPadding = dp.layout_system.spacing.section_padding.split('–')[0].replace('px', '').trim()
   const sectionPaddingLg = dp.layout_system.spacing.section_padding.split('–')[1]?.replace('px', '').trim() || sectionPadding
 
+  // Format colors object properly with quoted hex values
+  const formatColors = (colorsObj: Record<string, any>): string => {
+    const formatValue = (value: any): string => {
+      if (typeof value === 'string' && value.startsWith('#')) {
+        return `'${value}'`
+      }
+      if (typeof value === 'object' && value !== null) {
+        const entries = Object.entries(value).map(([k, v]) => 
+          `        ${k}: ${formatValue(v)}`
+        )
+        return `{\n${entries.join(',\n')}\n      }`
+      }
+      return JSON.stringify(value)
+    }
+    
+    const entries = Object.entries(colorsObj).map(([key, value]) => 
+      `      ${key}: ${formatValue(value)}`
+    )
+    return `{\n${entries.join(',\n')}\n    }`
+  }
+
   // Generate Tailwind config
   const tailwindConfig = `import type { Config } from 'tailwindcss'
 
@@ -50,7 +71,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: ${JSON.stringify(colors, null, 8).replace(/"/g, '')},
+      colors: ${formatColors(colors)},
       fontFamily: {
         serif: ['var(--font-${getFontVariable(dp.typography.primary_font.style)})', 'serif'],
         sans: ['var(--font-${getFontVariable(dp.typography.secondary_font.style)})', 'sans-serif'],
