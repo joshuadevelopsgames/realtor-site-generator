@@ -96,15 +96,15 @@ export default function AboutPage() {
       {agentData.numbers && agentData.numbers.show && (
         <section className="section-padding bg-black text-white">
           <div className="container-custom">
-            {'volume' in agentData.numbers && agentData.numbers.volume && agentData.numbers.volume !== 'TODO' && (
+            {(agentData.numbers as any).volume && (agentData.numbers as any).volume !== 'TODO' && (
               <div className="text-center mb-12">
                 <p className="text-5xl md:text-6xl font-serif font-semibold mb-2">
-                  {agentData.numbers.volume}
+                  {(agentData.numbers as any).volume}
                 </p>
                 <p className="text-sm uppercase tracking-wider text-white/70">Sales Volume</p>
               </div>
             )}
-            {'rankings' in agentData.numbers && agentData.numbers.rankings && (
+            {(agentData.numbers as any).rankings && (
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center">
                 {agentData.numbers.rankings.top250 && (
                   <div>
