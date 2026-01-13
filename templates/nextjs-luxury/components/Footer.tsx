@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import agentData from '@/content/agent.json'
-import agentData from '@/content/agent.json'
 
 export default function Footer() {
   return (
