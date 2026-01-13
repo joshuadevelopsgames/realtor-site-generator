@@ -38,7 +38,13 @@ async function scrapeTheAgencyProfile(
 ): Promise<AgentData> {
   const browser = await puppeteer.launch({
     headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--disable-dev-shm-usage',
+      '--disable-accelerated-2d-canvas',
+      '--disable-gpu',
+    ],
   })
 
   try {
@@ -47,10 +53,20 @@ async function scrapeTheAgencyProfile(
       'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
     )
     
-    await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 })
+    try {
+      await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 })
+    } catch (error: any) {
+      // Fallback to domcontentloaded if networkidle2 fails
+      await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 })
+    }
     
-    // Wait for content to load
-    await page.waitForSelector('body', { timeout: 10000 })
+    // Wait for content to load with multiple fallbacks
+    try {
+      await page.waitForSelector('body', { timeout: 10000 })
+    } catch {
+      // If body selector fails, wait a bit and continue
+      await page.waitForTimeout(2000)
+    }
 
     const html = await page.content()
     const $ = cheerio.load(html)

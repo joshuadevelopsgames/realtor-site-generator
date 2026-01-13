@@ -52,12 +52,21 @@ export async function scrapeListings(urls: string[]): Promise<Listing[]> {
 async function scrapeRealtorListing(browser: Browser, url: string): Promise<Listing | null> {
   const page = await browser.newPage()
   await page.setUserAgent(
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
   )
 
   try {
-    await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 })
-    await page.waitForSelector('body', { timeout: 10000 })
+    try {
+      await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 })
+    } catch {
+      await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 })
+    }
+    
+    try {
+      await page.waitForSelector('body', { timeout: 10000 })
+    } catch {
+      await page.waitForTimeout(2000)
+    }
 
     const html = await page.content()
     const $ = cheerio.load(html)
@@ -147,11 +156,20 @@ async function scrapeZillowListing(browser: Browser, url: string): Promise<Listi
   // Similar implementation to Realtor.com
   // Zillow has different selectors
   const page = await browser.newPage()
-  await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36')
+  await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
 
   try {
-    await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 })
-    await page.waitForSelector('body', { timeout: 10000 })
+    try {
+      await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 })
+    } catch {
+      await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 })
+    }
+    
+    try {
+      await page.waitForSelector('body', { timeout: 10000 })
+    } catch {
+      await page.waitForTimeout(2000)
+    }
 
     const html = await page.content()
     const $ = cheerio.load(html)
