@@ -138,23 +138,23 @@ export default function HomePage() {
       </section>
 
       {/* Instagram Preview */}
-      {agentData.social.instagram && agentData.social.instagram !== 'TODO: Insert Instagram handle' && agentData.social.instagramEmbeds && (
+      {(agentData as any).social && (agentData as any).social.instagram && (agentData as any).social.instagram !== 'TODO: Insert Instagram handle' && (agentData as any).social.instagramEmbeds && (
         <section className="section-padding bg-gray-light">
           <div className="container-custom">
             <div className="max-w-2xl mx-auto">
               <h2 className="mb-8 text-center">Follow Along</h2>
               <div className="space-y-8">
-                {agentData.social.instagramEmbeds.reel && (
-                  <InstagramEmbed url={agentData.social.instagramEmbeds.reel} />
+                {(agentData as any).social.instagramEmbeds.reel && (
+                  <InstagramEmbed url={(agentData as any).social.instagramEmbeds.reel} />
                 )}
-                {agentData.social.instagramEmbeds.examplePost && (
-                  <InstagramEmbed url={agentData.social.instagramEmbeds.examplePost} />
+                {(agentData as any).social.instagramEmbeds.examplePost && (
+                  <InstagramEmbed url={(agentData as any).social.instagramEmbeds.examplePost} />
                 )}
               </div>
-              {agentData.social.instagramUrl && (
+              {(agentData as any).social.instagramUrl && (
                 <div className="mt-8 text-center">
                   <a
-                    href={agentData.social.instagramUrl}
+                    href={(agentData as any).social.instagramUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm uppercase tracking-wider text-black hover:text-gold transition-colors"
