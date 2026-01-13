@@ -106,26 +106,26 @@ export default function AboutPage() {
             )}
             {(agentData.numbers as any).rankings && (
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center">
-                {agentData.numbers.rankings.top250 && (
+                {(agentData.numbers as any).rankings.top250 && (
                   <div>
                     <p className="text-3xl md:text-4xl font-serif font-semibold mb-2">
-                      {agentData.numbers.rankings.top250}
+                      {(agentData.numbers as any).rankings.top250}
                     </p>
                     <p className="text-sm uppercase tracking-wider text-white/70">Top 250 Realtors</p>
                   </div>
                 )}
-                {agentData.numbers.rankings['2020Country'] && (
+                {(agentData.numbers as any).rankings['2020Country'] && (
                   <div>
                     <p className="text-3xl md:text-4xl font-serif font-semibold mb-2">
-                      #{agentData.numbers.rankings['2020Country']}
+                      #{(agentData.numbers as any).rankings['2020Country']}
                     </p>
                     <p className="text-sm uppercase tracking-wider text-white/70">In the Country (2020)</p>
                   </div>
                 )}
-                {agentData.numbers.rankings['2020California'] && (
+                {(agentData.numbers as any).rankings['2020California'] && (
                   <div>
                     <p className="text-3xl md:text-4xl font-serif font-semibold mb-2">
-                      #{agentData.numbers.rankings['2020California']}
+                      #{(agentData.numbers as any).rankings['2020California']}
                     </p>
                     <p className="text-sm uppercase tracking-wider text-white/70">In California (2020)</p>
                   </div>
