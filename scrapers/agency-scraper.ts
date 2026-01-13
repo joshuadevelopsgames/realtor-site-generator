@@ -87,12 +87,39 @@ async function scrapeTheAgencyProfile(
       $('.agent-name').text().trim() ||
       'Unknown Agent'
 
-    // Extract bio
-    const bio = options.customBio || 
-      $('.agent-bio').text().trim() ||
-      $('[data-bio]').text().trim() ||
-      $('p').filter((_, el) => $(el).text().length > 200).first().text().trim() ||
-      'Bio not available'
+    // Extract bio - try multiple selectors and filter out copyright text
+    let bio = options.customBio
+    if (!bio) {
+      const bioSelectors = [
+        '.agent-bio',
+        '[data-bio]',
+        '.bio-content',
+        '.agent-description',
+        '.about-agent',
+      ]
+      
+      for (const selector of bioSelectors) {
+        const text = $(selector).text().trim()
+        if (text && text.length > 200 && !text.includes('©') && !text.includes('trademark')) {
+          bio = text
+          break
+        }
+      }
+      
+      // Fallback: find longest paragraph that's not copyright
+      if (!bio) {
+        $('p').each((_, el) => {
+          const text = $(el).text().trim()
+          if (text.length > 200 && !text.includes('©') && !text.includes('trademark') && !text.includes('All rights reserved')) {
+            if (!bio || text.length > bio.length) {
+              bio = text
+            }
+          }
+        })
+      }
+      
+      bio = bio || 'Bio not available'
+    }
 
     // Extract email
     const emailMatch = html.match(/mailto:([^\s"']+)/i)

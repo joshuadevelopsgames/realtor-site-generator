@@ -57,8 +57,13 @@ program
 
       // 4. Scrape listings
       spinner.start('Scraping MLS listings...')
-      const mlsUrls = options.mlsUrls.split(',').map((url: string) => url.trim())
-      const listings = await scrapeListings(mlsUrls)
+      const mlsUrls = options.mlsUrls
+        .split(',')
+        .map((url: string) => url.trim())
+        .filter((url: string) => url.length > 0 && url.startsWith('http'))
+      const listings = mlsUrls.length > 0 
+        ? await scrapeListings(mlsUrls)
+        : []
       spinner.succeed(`Found ${listings.length} listings`)
 
       // 5. Validate configuration
@@ -66,7 +71,7 @@ program
       const config = GeneratorConfigSchema.parse({
         style: designProfile,
         agencyProfileUrl: options.agencyProfile,
-        mlsUrls,
+        mlsUrls: mlsUrls.length > 0 ? mlsUrls : ['https://example.com/placeholder'], // Use placeholder if empty
         outputDir,
         agentSlug,
         customContent: {
@@ -74,6 +79,11 @@ program
           headshot: options.headshot,
         },
       })
+      
+      // Override mlsUrls in config if empty (for validation, but use empty array for scraping)
+      if (mlsUrls.length === 0) {
+        (config as any).mlsUrls = []
+      }
       spinner.succeed('Configuration valid')
 
       // 6. Generate site

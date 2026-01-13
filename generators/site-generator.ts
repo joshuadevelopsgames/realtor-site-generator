@@ -20,9 +20,23 @@ export async function generateSite(config: GeneratorConfig): Promise<void> {
   await ensureDir(outputDir)
 
   // 2. Copy template to output directory
-  const templateDir = path.join(__dirname, '../../templates/nextjs-luxury')
-  if (!(await fs.pathExists(templateDir))) {
-    throw new Error(`Template not found: ${templateDir}`)
+  // Try multiple possible paths for template
+  const possiblePaths = [
+    path.join(__dirname, '../../templates/nextjs-luxury'),
+    path.join(process.cwd(), 'templates/nextjs-luxury'),
+    path.join(__dirname, '../templates/nextjs-luxury'),
+  ]
+  
+  let templateDir: string | null = null
+  for (const possiblePath of possiblePaths) {
+    if (await fs.pathExists(possiblePath)) {
+      templateDir = possiblePath
+      break
+    }
+  }
+  
+  if (!templateDir) {
+    throw new Error(`Template not found. Tried: ${possiblePaths.join(', ')}`)
   }
 
   console.log(chalk.gray('   Copying template...'))

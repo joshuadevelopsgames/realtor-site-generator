@@ -32,6 +32,8 @@ export async function generateContentFiles(
   await writeJson(path.join(contentDir, 'agent.json'), agentData)
 
   // Generate listings.json
-  const listings = await scrapeListings(config.mlsUrls)
+  const listings = config.mlsUrls.length > 0 
+    ? await scrapeListings(config.mlsUrls)
+    : []
   await writeJson(path.join(contentDir, 'listings.json'), { listings })
 }

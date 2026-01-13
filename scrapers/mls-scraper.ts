@@ -11,7 +11,13 @@ import path from 'path'
 export async function scrapeListings(urls: string[]): Promise<Listing[]> {
   const browser = await puppeteer.launch({
     headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--disable-dev-shm-usage',
+      '--disable-accelerated-2d-canvas',
+      '--disable-gpu',
+    ],
   })
 
   try {
@@ -42,13 +48,26 @@ export async function scrapeListings(urls: string[]): Promise<Listing[]> {
           listings.push(listing)
         }
       } catch (error: any) {
-        console.error(`Error scraping ${url}:`, error.message)
+        console.warn(`⚠️  Error scraping ${url}: ${error.message}`)
+        console.warn(`   Continuing with other listings...`)
+        // Continue to next URL instead of failing completely
       }
     }
 
+    if (listings.length === 0 && urls.length > 0) {
+      console.warn('⚠️  No listings were successfully scraped. You may need to add listings manually.')
+    }
+
     return listings
+  } catch (error: any) {
+    console.error('Fatal error in MLS scraper:', error.message)
+    return [] // Return empty array instead of throwing
   } finally {
-    await browser.close()
+    try {
+      await browser.close()
+    } catch (error) {
+      // Ignore close errors
+    }
   }
 }
 
