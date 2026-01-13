@@ -12,7 +12,7 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  return listingsData.listings.map((listing) => ({
+  return (listingsData.listings as any[]).map((listing) => ({
     slug: listing.slug,
   }))
 }
