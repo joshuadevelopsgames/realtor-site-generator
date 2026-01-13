@@ -96,7 +96,7 @@ export default function AboutPage() {
       {agentData.numbers && agentData.numbers.show && (
         <section className="section-padding bg-black text-white">
           <div className="container-custom">
-            {agentData.numbers.volume && agentData.numbers.volume !== 'TODO' && (
+            {agentData.numbers.volume && 'volume' in agentData.numbers && agentData.numbers.volume !== 'TODO' && (
               <div className="text-center mb-12">
                 <p className="text-5xl md:text-6xl font-serif font-semibold mb-2">
                   {agentData.numbers.volume}
